@@ -12,7 +12,7 @@ function App() {
   return (
     <body>
     <div className="toggle-container">
-        <img id='bulb' className='bulb' src="https://www.freeiconspng.com/thumbs/lightbulb-png/light-bulb-png-bulb-png1247-12.png" alt="Bulb" />
+      <div className='imgdiv'> <img id='bulb' className='bulb' src="https://www.freeiconspng.com/thumbs/lightbulb-png/light-bulb-png-bulb-png1247-12.png" alt="Bulb" /> </div>
         <input onClick={change} id='toggle' type="checkbox" className="toggle-input" />
         <label for="toggle" className="toggle-label">
             <span className="toggle-slider"></span>
