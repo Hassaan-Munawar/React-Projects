@@ -31,7 +31,7 @@ img {
   display: inline-block;
   width: 60px;
   height: 30px;
-  background-color: green; 
+  background-color: red; 
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -49,7 +49,7 @@ img {
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: red; 
+  background-color: green; 
 }
 
 .toggle-input:checked + .toggle-label .toggle-slider {
