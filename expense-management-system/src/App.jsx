@@ -45,6 +45,7 @@ function App() {
   let balance = totalIncome - totalExpense;
 
   return (
+    <center>
     <div className="App">
       <h1>Expense Management System</h1>
       <div className="summary">
@@ -93,6 +94,7 @@ function App() {
         </ul>
       </div>
     </div>
+    </center>
   );
 }
 
