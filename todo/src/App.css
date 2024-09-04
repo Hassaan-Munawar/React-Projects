@@ -1,0 +1,136 @@
+/* App.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  color: #333;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input input::placeholder {
+  color: #a6a6a6;
+}
+
+.input input:focus {
+  border-color: #4c8bf5;
+  box-shadow: 0 0 8px rgba(76, 139, 245, 0.5);
+  outline: none;
+}
+
+.input button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #4c8bf5;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input button:hover {
+  background-color: #3773d0;
+  transform: translateY(-2px);
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.list-container li:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  border-color: #4c8bf5;
+}
+
+.list-container li span {
+  flex: 1;
+  font-size: 18px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 15px;
+  width: 80px;
+  border: none;
+  background-color: #f5a623;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #d4880b;
+  transform: translateY(-2px);
+}
+
+.actions button:last-child {
+  background-color: #f34c4c;
+}
+
+.actions button:last-child:hover {
+  background-color: #d03a3a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .input button, .actions button {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .list-container li {
+    font-size: 16px;
+  }
+}
+

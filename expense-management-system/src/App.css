@@ -1,0 +1,155 @@
+/* App.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item p:first-child {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.summary-item p:last-child {
+  margin: 5px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.transaction-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transaction-input input,
+.transaction-input select,
+.transaction-input button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  flex: 1;
+}
+
+.transaction-input button {
+  background-color: #4c8bf5;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.transaction-input button:hover {
+  background-color: #3773d0;
+  transform: translateY(-2px);
+}
+
+.transaction-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.transaction-list li:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  border-color: #4c8bf5;
+}
+
+.transaction-list li span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #ff9f43;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #d4880b;
+  transform: translateY(-2px);
+}
+
+.actions button:last-child {
+  background-color: #f34c4c;
+}
+
+.actions button:last-child:hover {
+  background-color: #d03a3a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .transaction-input button, .actions button {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .transaction-list li {
+    font-size: 14px;
+  }
+}
+
