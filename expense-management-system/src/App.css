@@ -16,7 +16,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 600px; /* Adjust for larger screens */
+  max-width: 600px; 
   color: #333;
   box-sizing: border-box;
 }
@@ -32,7 +32,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  flex-wrap: wrap; /* Allows summary items to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .summary-item {
@@ -62,7 +62,7 @@ h1 {
 .transaction-input {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Allows input fields to wrap on smaller screens */
+  flex-wrap: wrap; 
   margin-bottom: 20px;
 }
 
@@ -74,7 +74,7 @@ h1 {
   border: 2px solid #ddd;
   font-size: 1rem;
   flex: 1;
-  min-width: calc(50% - 10px); /* Adjusts for screen width */
+  min-width: calc(50% - 10px); 
   box-sizing: border-box;
 }
 
@@ -84,7 +84,7 @@ h1 {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  min-width: 100%; /* Button takes full width on smaller screens */
+  min-width: 100%; 
 }
 
 .transaction-input button:hover {
@@ -111,7 +111,7 @@ h1 {
   border: 2px solid #ddd;
   transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   box-sizing: border-box;
-  flex-wrap: wrap; /* Allows actions to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .transaction-list li:hover {
@@ -128,7 +128,7 @@ h1 {
 .actions {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Allows action buttons to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .actions button {
@@ -168,7 +168,7 @@ h1 {
 
   .transaction-input input,
   .transaction-input select {
-    min-width: 100%; /* Input fields take full width on smaller screens */
+    min-width: 100%; 
   }
 
   .transaction-input button {
