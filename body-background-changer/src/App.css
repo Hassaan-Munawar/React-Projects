@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.color-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.color-button:first-child {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.color-button.black {
+  background-color: #333;
+  color: #fff;
+}
+
+.color-button:hover {
+  opacity: 0.8;
+}
