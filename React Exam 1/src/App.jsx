@@ -47,15 +47,17 @@ function App() {
   };
 
   return (
-    <div className={`main ${theme}`}>
+    <div style={{overflowX:"hidden"}} className={`main ${theme}`}>
       <nav className="nav"
         style={{
+          position:'fixed',
           width: "100vw",
-          height: "12vh",
+          height: "11vh",
+          backgroundColor:'#fff',
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <div style={{ float: "right" }}>
+        <div style={{ display:"flex",justifyContent:"end",alignItems:"center"}}>
           <input 
             onClick={toggleTheme} 
             id="toggle" 
@@ -69,7 +71,7 @@ function App() {
       </nav>
 
       <center>
-        <div className="todo">
+        <div style={{marginBottom:'40px'}} className="todo">
           <h1>Todo Application</h1>
           <div className="input">
             <input

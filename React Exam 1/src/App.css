@@ -7,8 +7,7 @@
 }
 
 .toggle-label {
-  margin-right: 10px;
-  margin-top:15px ;
+   margin-right: 30px !important;
   position: relative;
   display: inline-block;
   width: 60px;
@@ -271,7 +270,7 @@ body {
   color: #ffffff;
 }
 .main.black nav{
-  background-color: #333;
+  background-color: #333 !important;
 }
 
 .main.black .todo {
