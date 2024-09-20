@@ -70,6 +70,7 @@ function App() {
     <div className="password-generator">
       <div className="password-display">
         <h2>{password}</h2>
+        
         <div className="icons">
           <FontAwesomeIcon
             icon={copiedIcon}

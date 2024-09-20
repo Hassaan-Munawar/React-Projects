@@ -26,6 +26,19 @@
   display: flex;
   gap: 20px;
 }
+@media (max-width:480px) {
+  .password-display{
+    display: block;
+  }
+  .password-display h2{
+    text-align: center;
+  }
+  .icons{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
 
 .icon {
   font-size: 24px;
