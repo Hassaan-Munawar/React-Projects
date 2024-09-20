@@ -20,8 +20,8 @@ body {
   padding: 20px;
   width: 100%;
   max-width: 500px;
-  max-height: 700px; /* Restrict height to avoid scrolling */
-  overflow: hidden; /* Prevent scrolling */
+  max-height: 700px; 
+  overflow: hidden; 
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.8s ease-in-out;
   display: flex;
@@ -72,7 +72,7 @@ body {
 }
 
 .option-label:hover {
-  background-color: #e0eaff; /* Color change on hover */
+  background-color: #e0eaff; 
   transform: scale(1.02);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -125,11 +125,10 @@ body {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .App {
     padding: 20px;
-    max-height: 90vh; /* Allow more space for smaller screens */
+    max-height: 90vh; 
   }
   .quiz-title {
     font-size: 2rem;
