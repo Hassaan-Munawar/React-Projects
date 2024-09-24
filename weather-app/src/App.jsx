@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
-import { FaSearch } from 'react-icons/fa';
 import pic from './Aplle.png'
 
 const WeatherApp = () => {
@@ -64,11 +63,8 @@ const WeatherApp = () => {
           className="input"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          placeholder="Enter city"
+          placeholder="Enter city name"
         />
-        <button className="button" onClick={() => fetchWeatherData(location)}>
-          <FaSearch />
-        </button>
       </div>
 
       {isLoading && <p className="loading-text">Loading...</p>}
@@ -88,7 +84,7 @@ const WeatherApp = () => {
       )}
       {forecastData && (
         <>
-  {/* <h1 style={{textAlign:'center',color:'#4c83ff',backgroundColor:'#e3e3e3',padding:'20px',borderRadius:'10px'}}>Forecast for the Next 3 Days with 3-Hour Updates</h1> */}
+  <h1 style={{textAlign:'center',color:'#4c83ff'}}>Forecast 3/3</h1>
         <div className="forecast">
           {forecastData.list.map((forecast, index) => (
             <div key={index} className="forecast-day">
