@@ -84,7 +84,7 @@ const WeatherApp = () => {
       )}
       {forecastData && (
         <>
-  <h1 style={{textAlign:'center',color:'#4c83ff'}}>Forecast 3/3</h1>
+  <h1 style={{textAlign:'center',color:'#4c83ff'}}>Forecast 5/3</h1>
         <div className="forecast">
           {forecastData.list.map((forecast, index) => (
             <div key={index} className="forecast-day">
