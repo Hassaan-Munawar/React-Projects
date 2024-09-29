@@ -15,7 +15,7 @@ function Cards({ item }) {
       style={{ width: "100%" }}
       cover={<img alt="example" src={item.image} className="img-fluid" />}
       actions={[
-        <Button onClick={goToPage} type="primary">
+        <Button className="m-3" onClick={goToPage} type="primary">
           View Product
         </Button>,
       ]}
